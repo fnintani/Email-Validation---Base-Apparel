@@ -1,0 +1,33 @@
+@use "./utilities/colors" as c;
+
+@media only screen and (max-width: 375px) {
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 255px 400px;
+        .logo-header {
+            padding-top: 2rem;
+            padding-left: 1.8rem;
+            grid-row: 1/2;
+            background-color: c.$white-bg;
+            img{
+                margin-top: 65px;
+                width: 100px;
+                height: 21px;
+            }
+        }
+
+        .right{
+            background-image: url(../images/hero-mobile.jpg);
+            background-size: cover;
+            background-position: center;
+            grid-row: 2/3;
+            
+        }
+
+        .left {
+            grid-row: 3/4;
+            background-color: aqua;
+        }
+}
+}

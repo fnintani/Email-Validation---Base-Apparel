@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 93%, 68%);
+  font-size: 16;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 255px 400px;
+  }
+  .container .logo-header {
+    padding-top: 2rem;
+    padding-left: 1.8rem;
+    grid-row: 1/2;
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .container .logo-header img {
+    margin-top: 65px;
+    width: 100px;
+    height: 21px;
+  }
+  .container .right {
+    background-image: url(../images/hero-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row: 2/3;
+  }
+  .container .left {
+    grid-row: 3/4;
+    background-color: aqua;
+  }
+}
